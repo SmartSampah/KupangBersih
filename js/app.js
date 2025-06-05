@@ -51,9 +51,4 @@ function loadLaporan() {
     L.marker([l.lat, l.lon]).addTo(map).bindPopup(l.desc);
   });
 }
-window.onload = function() {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js');
-  }
-  loadLaporan();
-};
+window.onload = loadLaporan;
