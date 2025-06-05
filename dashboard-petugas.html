@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><title>Petugas Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h2>Form Laporan Sampah</h2>
+<input id="desc" placeholder="Deskripsi">
+<input id="alamat" placeholder="Alamat">
+<input type="file" id="foto" accept="image/*">
+<button onclick="kirimLaporan()">Kirim</button>
+<ul id="riwayatList"></ul>
+<div id="map" style="height:300px;"></div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
